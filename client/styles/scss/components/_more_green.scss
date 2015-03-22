@@ -1,0 +1,34 @@
+.more-green {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #16a085;
+    border-radius: 50%;
+    @include transition-property (all);
+    @include transition-duration (300ms);
+    &::after {
+      content: '';
+      display: inline-block;
+      margin-top: 8px;
+      width: 5px;
+      height: 5px;
+      border-top: 2px solid #16a085;
+      border-right: 2px solid #16a085;
+      @include transform (rotate(135deg));
+      @include transition-property (all);
+      @include transition-duration (300ms);
+    }
+    &:hover {
+      border: 2px solid #505158;
+      &::after {
+        border-top: 2px solid #505158;
+        border-right: 2px solid #505158;
+      }
+    }
+  }
+
+}

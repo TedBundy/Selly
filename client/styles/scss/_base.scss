@@ -1,0 +1,26 @@
+body {
+  position: relative;
+  &.landing {
+    overflow-x: hidden;
+    @include user-select(none);
+  }
+  .content-wrapper {
+    font-size: 0px;
+    text-align: center;
+    .content {
+      display: inline-block;
+      .container {
+        width: 902px;
+        margin:0 auto;
+      }
+    }
+    .clearfix {
+      &::after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+    }
+
+  }
+}

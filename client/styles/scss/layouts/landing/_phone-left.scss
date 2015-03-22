@@ -1,0 +1,44 @@
+.phone-left {
+  padding-top: 215px;
+  padding-bottom: 215px;
+  text-align: left;
+  h5 {
+    margin-top: 175px;
+    font-family: 'Georgia', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #8a8a8a;
+  }
+  h2 {
+    margin-top: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #363636;
+  }
+  p {
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: #8a8a8a;
+    line-height: 1.7;
+  }
+  figure {
+    @include clearfix;
+
+    img {
+      float: left;
+      margin-left: 20px;
+    }
+    figcaption {
+      float: right;
+      width: 470px;
+      margin-right: 11px;
+    }
+  }
+  div.more-green{
+    padding-top: 30px;
+  }
+}

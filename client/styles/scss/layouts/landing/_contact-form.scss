@@ -1,0 +1,56 @@
+.contact {
+  position:relative;
+  width: 100%;
+  background-color: #2c3e50;
+  @include box-sizing (border-box);
+  &::before {
+    position:absolute;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    left: -100%;
+    z-index: -1;
+    background-color: #2c3e50;
+    content: "";
+  }
+  &::after {
+    position:absolute;
+    right: -100%;
+    bottom: 0;
+    left: -100%;
+    z-index: 0;
+    width: auto;
+    height: 5px;
+    content: "";
+
+  }
+
+  .contact-form {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 432px;
+    background-color: #2c3e50;
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 36px;
+      margin-top: 120px;
+      font-weight: 300;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 50px;
+      font-size: 16px;
+      font-weight: 300;
+      color: #ffffff;
+    }
+    button {
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+}

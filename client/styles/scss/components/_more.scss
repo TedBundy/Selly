@@ -1,0 +1,31 @@
+.more {
+
+  span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    @include transition-property (all);
+    @include transition-duration (700ms);
+    &::after {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-top: 3px solid #fff;
+      border-right: 3px solid #fff;
+      content: '';
+      margin-top: 11px;
+      @include transform(rotate(135deg));
+      @include transition-property (all);
+      @include transition-duration (700ms);
+    }
+    &:hover {
+      border: 2px solid #16a085;
+      &::after {
+        border-top: 3px solid #16a085;
+        border-right: 3px solid #16a085;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.button {
+  font-size: 0;
+  .button-black {
+    width: 226px;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    opacity: 0.5;
+    @include border-radius(4px);
+    @include transition-property(all);
+    @include transition-duration(700ms);
+    &:hover {
+      border: 2px solid;
+      background-color: #000000;
+      opacity: 0.6;
+    }
+  }
+  .button-green {
+    width: 230px;
+    background-color: #16a085;
+    box-shadow: 0px -4px 0px 0px #3bd4b6 inset;
+    @include border-radius(4px);
+    @include transition-property(all);
+    @include transition-duration(700ms);
+    &:hover {
+      background-color: #19b596;
+      width: 230px;
+    }
+  }
+
+}

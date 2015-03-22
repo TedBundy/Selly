@@ -1,0 +1,64 @@
+.greeting {
+  width: 100%;
+  height: 756px;
+  padding-top: 120px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-image: inline_image("greeting/fone.jpg");
+  background-size: cover;
+  div.logo {
+    position: relative;
+    width: 256px;
+    height: 116px;
+    margin:auto;
+    background-image: inline_image("greeting/logo.png");
+    background-repeat: no-repeat;
+
+    &::after {
+      content: inline_image("greeting/shadow.png");
+      opacity: 0.7;
+      }
+    }
+  h2 {
+    margin-top: 55px;
+    font-size: 48px;
+    font-weight: lighter;
+    color: #ffffff;
+    span {
+      font-weight: bold;
+
+    }
+  }
+  p {
+    margin-top: 44px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+  }
+  .button {
+    margin-top: 112px;
+    margin-bottom: 112px;
+    li {
+      display: inline-block;
+      margin-right: 28px;
+      font-size: 16px;
+      line-height: 72px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        display: inherit;
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .more {
+    display: inline-block;
+    a {
+      display: inline-block;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+body {
+  &.landing {
+    @import "landing/greeting";
+    @import "landing/contact-form";
+    @import "landing/about-us";
+    @import "landing/phone-right";
+    @import "landing/phone-left";
+    @import "landing/about-product";
+    .push {
+      float: right;
+      vertical-align: top;
+      width: 0;
+      height: 100%;
+      min-height: 1px;
+      @include transition-property(width);
+      @include transition-duration(400ms);
+      &.show {
+        width: 190px;
+      }
+    }
+  }
+
+}
